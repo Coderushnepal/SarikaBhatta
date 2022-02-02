@@ -1,0 +1,34 @@
+//Create a function that keeps only strings with repeating identical characters (in other words, it has a set size of 1).
+
+function identicalfilter(arr){
+    var final = [];
+    for(i=0;i<arr.length;i++)
+    {
+        var sis= arr[i];
+        var bro= sis.split(""); // coverting string into array since sis is a string. ie, arr[i] item is a string. So, '999' coverts into array ["9", "9", "9"]
+        var firstcharacter = bro[0];
+        var flag= true;
+        for(j=1;j<bro.length;j++)
+        {
+            
+                // if(bro[j]==bro[j+1])--- this means comparing 0 index with 1, 1 with 2, 2 with 3 so on   
+            if(firstcharacter != bro[j]){
+                flag= false;
+                break; // when value of flag turns to flase the break statement runs
+
+            }
+
+            if(flag== false){
+                final.push(arry[i])
+                
+            }
+            
+        }
+
+    }   
+    return final;
+}                 
+
+var  finalresult=  identicalfilter(['999','80', '768', '456','xox', 'x']) // passing array directly as a parameter
+console.log(finalresult);
+    
