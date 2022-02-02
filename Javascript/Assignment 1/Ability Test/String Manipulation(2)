@@ -1,0 +1,8 @@
+function newWord(strng){
+  var removedLetter = strng.charAt(0);
+  var newstring= strng.replace(removedLetter," ") // first letter is replaced by a white space with REPLACE method 
+  return newstring;
+}
+
+var finalstring= newWord("apple");
+console.log(finalstring);
