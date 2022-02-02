@@ -1,0 +1,9 @@
+function giveMeSomething(strng){
+  var newstring= "something" + " "  + strng;
+  return newstring;
+  
+}
+var finalstring= giveMeSomething("in him is awesome");
+console.log(finalstring);
+
+        
