@@ -1,0 +1,16 @@
+var emptyarray= [];
+function filterArray(arr){
+  for( i= 0; i< arr.length; i++){
+    var dataTypeofitem = typeof(arr[i]);
+    if(dataTypeofitem === 'string'){
+        delete arr[i]; // however this creates holes in the array 
+        
+        
+    }
+  
+    }
+  
+return arr;
+}
+var finalarray= filterArray([1,"sarika", "code rush", 2, 67, 89])
+console.log(finalarray);
